@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catrina Style – Roupas, acessórios e calçados em Jales-SP. Moda masculina streetwear premium. Enviamos para todo o Brasil." />
+  <meta name="keywords" content="catrina style, moda masculina, streetwear, jales, roupas, calçados, acessórios" />
+  <meta property="og:title" content="Catrina Style | Moda Masculina Premium" />
+  <meta property="og:description" content="Estilo que define sua identidade. Roupas, acessórios e calçados em Jales-SP." />
+  <title>Catrina Style | Moda Masculina Premium</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== LOADER ===================== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">Catrina</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <!-- Substituir pelo logo SVG ou imagem: assets/img/logo.png -->
+        <span class="logo-text">Catrina</span>
+        <span class="logo-sub">STYLE</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#depoimentos">Clientes</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-whatsapp-nav" onclick="openWhatsApp()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Comprar
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="#sobre" class="mobile-link">Sobre</a></li>
+      <li><a href="#categorias" class="mobile-link">Categorias</a></li>
+      <li><a href="#produtos" class="mobile-link">Produtos</a></li>
+      <li><a href="#depoimentos" class="mobile-link">Clientes</a></li>
+      <li><a href="#contato" class="mobile-link">Contato</a></li>
+    </ul>
+    <div class="mobile-social">
+      <a href="https://instagram.com/catrina.stylejales" target="_blank">@catrina.stylejales</a>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <!-- Substituir pelo banner principal da loja: assets/img/hero-banner.jpg -->
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-gradient"></div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="hero-deco hero-deco-1"></div>
+    <div class="hero-deco hero-deco-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">Jales · SP · Enviamos para todo Brasil</div>
+      <h1 class="hero-title">
+        <span class="reveal-up delay-1">Estilo que</span>
+        <em class="reveal-up delay-2">define</em>
+        <span class="reveal-up delay-3">sua identidade.</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-4">Roupas, acessórios e calçados selecionados para quem vive a moda de verdade.</p>
+      <div class="hero-ctas reveal-up delay-5">
+        <a href="#categorias" class="btn-primary">Ver Coleção</a>
+        <a href="#sobre" class="btn-ghost">Nossa História</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- Floating product image placeholder -->
+    <div class="hero-product-float">
+      <!-- Adicionar imagem destaque: assets/img/hero-product.png -->
+      <div class="hero-product-placeholder">
+        <div class="placeholder-shimmer"></div>
+        <span>Nova Coleção</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TICKER ===================== -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>STREETWEAR PREMIUM</span>
+      <span>·</span>
+      <span>NOVA COLEÇÃO</span>
+      <span>·</span>
+      <span>FRETE PARA TODO BRASIL</span>
+      <span>·</span>
+      <span>QUALIDADE GARANTIDA</span>
+      <span>·</span>
+      <span>ATENDIMENTO PERSONALIZADO</span>
+      <span>·</span>
+      <span>STREETWEAR PREMIUM</span>
+      <span>·</span>
+      <span>NOVA COLEÇÃO</span>
+      <span>·</span>
+      <span>FRETE PARA TODO BRASIL</span>
+      <span>·</span>
+      <span>QUALIDADE GARANTIDA</span>
+      <span>·</span>
+      <span>ATENDIMENTO PERSONALIZADO</span>
+      <span>·</span>
+    </div>
+  </div>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section id="sobre" class="section-sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-image-wrap reveal-left">
+          <!-- Adicionar foto da loja aqui: assets/img/loja.jpg -->
+          <div class="sobre-img-placeholder">
+            <div class="img-inner">
+              <div class="img-label">Catrina Style · Jales SP</div>
+            </div>
+          </div>
+          <div class="sobre-img-badge">
+            <span class="badge-num">+3k</span>
+            <span class="badge-txt">Clientes felizes</span>
+          </div>
+        </div>
+
+        <div class="sobre-text reveal-right">
+          <div class="section-eyebrow">Nossa história</div>
+          <h2 class="section-title">Moda que fala<br /><em>por você.</em></h2>
+          <p>A Catrina Style nasceu com um propósito: levar o melhor do streetwear masculino para Jales e para todo o Brasil. Somos uma loja de roupas, acessórios e calçados com curadoria especial, pensada para quem tem estilo.</p>
+          <p>Trabalhamos com marcas renomadas, peças duráveis e coleções sempre atualizadas — porque quem veste Catrina não segue tendências, define tendências.</p>
+          <ul class="sobre-lista">
+            <li>
+              <span class="lista-icon">✦</span>
+              <span>Enviamos para todo o Brasil</span>
+            </li>
+            <li>
+              <span class="lista-icon">✦</span>
+              <span>Marcas selecionadas e qualidade garantida</span>
+            </li>
+            <li>
+              <span class="lista-icon">✦</span>
+              <span>Atendimento personalizado no WhatsApp</span>
+            </li>
+            <li>
+              <span class="lista-icon">✦</span>
+              <span>Coleções atualizadas com as últimas tendências</span>
+            </li>
+          </ul>
+          <a href="https://wa.me/5517996623922" target="_blank" class="btn-primary">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORIAS ===================== -->
+  <section id="categorias" class="section-categorias">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-eyebrow">O que você encontra</div>
+        <h2 class="section-title">Nossas <em>categorias</em></h2>
+      </div>
+
+      <div class="categorias-grid">
+        <!-- Card 1 -->
+        <div class="cat-card reveal-up delay-1">
+          <!-- Adicionar imagem: assets/img/cat-camisetas.jpg -->
+          <div class="cat-img" style="--cat-color: #1a1a2e;">
+            <div class="cat-img-inner">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+            </div>
+          </div>
+          <div class="cat-info">
+            <h3>Camisetas</h3>
+            <p>Streetwear, estampas exclusivas e básicos premium</p>
+            <a href="https://wa.me/5517996623922?text=Quero%20ver%20camisetas" target="_blank" class="cat-btn">Explorar <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="cat-card reveal-up delay-2">
+          <!-- Adicionar imagem: assets/img/cat-calcados.jpg -->
+          <div class="cat-img" style="--cat-color: #0f2027;">
+            <div class="cat-img-inner">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 12l10-8 10 8v8a2 2 0 01-2 2H4a2 2 0 01-2-2v-8z"/><path d="M3 13h18"/><circle cx="7" cy="17" r="1"/><circle cx="12" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>
+            </div>
+          </div>
+          <div class="cat-info">
+            <h3>Calçados</h3>
+            <p>Tênis, sneakers e estilo do solado à borra</p>
+            <a href="https://wa.me/5517996623922?text=Quero%20ver%20calçados" target="_blank" class="cat-btn">Explorar <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="cat-card reveal-up delay-3">
+          <!-- Adicionar imagem: assets/img/cat-acessorios.jpg -->
+          <div class="cat-img" style="--cat-color: #16213e;">
+            <div class="cat-img-inner">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+            </div>
+          </div>
+          <div class="cat-info">
+            <h3>Acessórios</h3>
+            <p>Bonés, cintos, relógios e mais para completar o look</p>
+            <a href="https://wa.me/5517996623922?text=Quero%20ver%20acessórios" target="_blank" class="cat-btn">Explorar <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="cat-card reveal-up delay-4">
+          <!-- Adicionar imagem: assets/img/cat-conjuntos.jpg -->
+          <div class="cat-img" style="--cat-color: #1a0533;">
+            <div class="cat-img-inner">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+            </div>
+          </div>
+          <div class="cat-info">
+            <h3>Conjuntos</h3>
+            <p>Looks completos, de cima a baixo com identidade</p>
+            <a href="https://wa.me/5517996623922?text=Quero%20ver%20conjuntos" target="_blank" class="cat-btn">Explorar <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="cat-card cat-card-wide reveal-up delay-5">
+          <!-- Adicionar imagem: assets/img/cat-casual.jpg -->
+          <div class="cat-img" style="--cat-color: #0a0a1a;">
+            <div class="cat-img-inner">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+          </div>
+          <div class="cat-info">
+            <h3>Moda Casual</h3>
+            <p>Para o dia a dia com estilo e conforto — do trabalho ao rolê</p>
+            <a href="https://wa.me/5517996623922?text=Quero%20ver%20moda%20casual" target="_blank" class="cat-btn">Explorar <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUTOS ===================== -->
+  <section id="produtos" class="section-produtos">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-eyebrow">Vitrine premium</div>
+        <h2 class="section-title">Produtos em <em>destaque</em></h2>
+        <p class="section-desc">Peças selecionadas especialmente para você. Clique e peça pelo WhatsApp.</p>
+      </div>
+
+      <div class="produtos-grid">
+
+        <!-- Produto 1 -->
+        <div class="prod-card reveal-up delay-1">
+          <div class="prod-img-wrap">
+            <!-- Adicionar imagem do produto: assets/products/produto-01.jpg -->
+            <div class="prod-img-placeholder">
+              <div class="prod-img-inner">
+                <span class="prod-img-icon">👕</span>
+              </div>
+            </div>
+            <div class="prod-badge">Novo</div>
+            <div class="prod-overlay">
+              <a href="https://wa.me/5517996623922?text=Tenho%20interesse%20neste%20produto" target="_blank" class="prod-overlay-btn">Comprar Agora</a>
+            </div>
+          </div>
+          <div class="prod-info">
+            <!-- Nome do produto -->
+            <h4>Camiseta Oversized</h4>
+            <div class="prod-price-wrap">
+              <!-- Preço -->
+              <span class="prod-price">R$ 89,90</span>
+              <a href="https://wa.me/5517996623922" target="_blank" class="prod-buy-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="prod-card reveal-up delay-2">
+          <div class="prod-img-wrap">
+            <!-- Adicionar imagem do produto: assets/products/produto-02.jpg -->
+            <div class="prod-img-placeholder">
+              <div class="prod-img-inner">
+                <span class="prod-img-icon">👟</span>
+              </div>
+            </div>
+            <div class="prod-badge prod-badge-hot">Hot</div>
+            <div class="prod-overlay">
+              <a href="https://wa.me/5517996623922?text=Tenho%20interesse%20neste%20produto" target="_blank" class="prod-overlay-btn">Comprar Agora</a>
+            </div>
+          </div>
+          <div class="prod-info">
+            <!-- Nome do produto -->
+            <h4>Tênis Sneaker</h4>
+            <div class="prod-price-wrap">
+              <!-- Preço -->
+              <span class="prod-price">R$ 249,90</span>
+              <a href="https://wa.me/5517996623922" target="_blank" class="prod-buy-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="prod-card reveal-up delay-3">
+          <div class="prod-img-wrap">
+            <!-- Adicionar imagem do produto: assets/products/produto-03.jpg -->
+            <div class="prod-img-placeholder">
+              <div class="prod-img-inner">
+                <span class="prod-img-icon">🧢</span>
+              </div>
+            </div>
+            <div class="prod-overlay">
+              <a href="https://wa.me/5517996623922?text=Tenho%20interesse%20neste%20produto" target="_blank" class="prod-overlay-btn">Comprar Agora</a>
+            </div>
+          </div>
+          <div class="prod-info">
+            <!-- Nome do produto -->
+            <h4>Boné Aba Reta</h4>
+            <div class="prod-price-wrap">
+              <!-- Preço -->
+              <span class="prod-price">R$ 59,90</span>
+              <a href="https://wa.me/5517996623922" target="_blank" class="prod-buy-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a
