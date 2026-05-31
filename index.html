@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Catrina Style — Moda Urbana Masculina | Jales-SP</title>
+<meta name="description" content="Curadoria premium de roupas, calçados e acessórios masculinos em Jales-SP. Atendimento via WhatsApp e envios para todo o Brasil." />
+<meta property="og:title" content="Catrina Style — Urban Essentials" />
+<meta property="og:description" content="Streetwear premium para o homem moderno. Jales-SP." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="catrina-logo.jpg" />
+<link rel="icon" href="catrina-logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Playfair+Display:ital,wght@1,600;1,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-background: oklch(0.13 0 0);
+  --color-foreground: oklch(0.985 0 0);
+  --color-card: oklch(0.17 0 0);
+  --color-card-foreground: oklch(0.985 0 0);
+  --color-muted: oklch(0.22 0 0);
+  --color-muted-foreground: oklch(0.985 0 0 / 50%);
+  --color-accent: oklch(1 0 0);
+  --color-accent-foreground: oklch(0.13 0 0);
+  --color-border: oklch(1 0 0 / 12%);
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --radius: 0rem;
+}
+</style>
+<style>
+  * { border-color: var(--color-border); }
+  body { background: var(--color-background); color: var(--color-foreground); font-family: var(--font-display); -webkit-font-smoothing: antialiased; }
+  ::selection { background: var(--color-foreground); color: var(--color-background); }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .font-display { font-family: var(--font-display); }
+  .font-script { font-family: var(--font-script); }
+  .font-mono { font-family: var(--font-mono); }
+  @keyframes reveal-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes script-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+  @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  .animate-reveal { animation: reveal-up 0.8s var(--ease-out-expo) both; }
+  .animate-script-float { animation: script-float 4s ease-in-out infinite; }
+  .animate-marquee { animation: marquee 30s linear infinite; }
+  .reveal-on-scroll { opacity: 0; transform: translateY(40px); transition: opacity .9s var(--ease-out-expo), transform .9s var(--ease-out-expo); }
+  .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+  .reveal-scale { opacity: 0; transform: scale(.94); transition: opacity .8s var(--ease-out-expo), transform .8s var(--ease-out-expo); }
+  .reveal-scale.is-visible { opacity: 1; transform: scale(1); }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-reveal,.animate-script-float,.animate-marquee { animation: none !important; }
+    .reveal-on-scroll,.reveal-scale { opacity:1 !important; transform:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body class="min-h-screen bg-background text-foreground font-display pb-32">
+
+<nav class="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border px-5 py-4 flex justify-between items-center">
+  <span class="font-mono text-[10px] tracking-tighter uppercase opacity-60">JLS // SP</span>
+  <div class="font-script italic text-2xl tracking-tighter animate-script-float">Catrina</div>
+  <div class="size-2 bg-foreground rounded-full"></div>
+</nav>
+
+<!-- Hero -->
+<section class="relative px-5 pt-12 pb-16 overflow-hidden">
+  <div class="absolute -left-12 top-0 text-[12rem] font-black opacity-[0.04] select-none pointer-events-none tracking-tighter leading-none">STYLE</div>
+  <div class="relative z-10 animate-reveal">
+    <p class="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Catrina Style — Est. Jales</p>
+    <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tighter leading-[0.9] mb-6 uppercase">Urban<br>Essentials</h1>
+    <div class="mb-6 mx-auto aspect-square w-[78%] max-w-[320px] rounded-full overflow-hidden shadow-[0_30px_80px_-20px_rgba(255,255,255,0.12)] animate-script-float">
+      <img src="catrina-logo.jpg" alt="Catrina Style logo" class="w-full h-full object-cover" />
+    </div>
+    <p class="max-w-[34ch] text-muted-foreground text-sm leading-relaxed">Curadoria premium de moda masculina, calçados e acessórios. Estética urbana de Jales para todo o Brasil.</p>
+    <a href="https://wa.me/5517996623922" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 mt-8 bg-accent text-accent-foreground px-6 py-3 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">Comprar via WhatsApp <span>→</span></a>
+  </div>
+</section>
+
+<!-- Stories -->
+<section aria-label="Destaques" class="animate-reveal" style="animation-delay:150ms">
+  <div id="stories" class="flex gap-5 overflow-x-auto px-5 no-scrollbar pb-10"></div>
+</section>
+
+<!-- Novidades -->
+<section id="colecoes" class="px-5 space-y-8 animate-reveal" style="animation-delay:300ms">
+  <div class="flex justify-between items-end border-b border-border pb-2">
+    <h2 class="text-xs font-mono uppercase tracking-[0.2em] opacity-60">Novidades</h2>
+    <span class="text-[10px] font-mono opacity-30 uppercase tracking-widest">Drop 24.1</span>
+  </div>
+  <div class="grid grid-cols-2 gap-4">
+    <a href="https://wa.me/5517996623922" target="_blank" rel="noreferrer" class="col-span-2 group block">
+      <div class="aspect-[4/5] bg-card w-full mb-3 overflow-hidden reveal-scale">
+        <img src="novidade-camisetas-time.jpg" alt="Camisetas de time básicas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+      </div>
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold tracking-tight uppercase">Camisetas de Time</h3>
+          <p class="text-[11px] font-mono text-muted-foreground mt-1">Do P ao GG · A partir de R$ 38</p>
+        </div>
+        <span class="text-[10px] font-mono bg-accent text-accent-foreground px-1.5 py-0.5">NOVO</span>
+      </div>
+    </a>
+    <a href="https://wa.me/5517996623922" target="_blank" rel="noreferrer" class="group block reveal-on-scroll">
+      <div class="aspect-[3/4] bg-card w-full mb-3 overflow-hidden">
+        <img src="novidade-bermudas-ktron.jpg" alt="Bermudas jeans KTRON" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+      </div>
+      <h3 class="text-sm font-bold uppercase tracking-tight">Bermudas Jeans</h3>
+    </a>
+    <a href="https://wa.me/5517996623922" target="_blank" rel="noreferrer" class="group block reveal-on-scroll" style="transition-delay:120ms">
+      <div class="aspect-[3/4] bg-card w-full mb-3 overflow-hidden">
+        <img src="cbf-jordan.jpg" alt="Camisa Jordan x CBF" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+      </div>
+      <h3 class="text-sm font-bold uppercase tracking-tight">Jordan x CBF</h3>
+    </a>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="mt-16 border-y border-border overflow-hidden py-4 bg-card/30">
+  <div class="flex gap-8 whitespace-nowrap animate-marquee font-mono text-xs uppercase tracking-[0.3em] opacity-60">
+    <div class="flex gap-8 shrink-0"><span>Catrina Style</span><span>★</span><span>Urban Essentials</span><span>★</span><span>Jales — SP</span><span>★</span><span>Envios p/ todo Brasil</span><span>★</span><span>Drop 24.1</span><span>★</span></div>
+    <div class="flex gap-8 shrink-0"><span>Catrina Style</span><span>★</span><span>Urban Essentials</span><span>★</span><span>Jales — SP</span><span>★</span><span>Envios p/ todo Brasil</span><span>★</span><span>Drop 24.1</span><span>★</span></div>
+  </div>
+</div>
+
+<!-- Seleção Brasileira -->
+<section id="selecao" class="mt-20 px-5">
+  <div class="flex justify-between items-end border-b border-border pb-2 mb-6 reveal-on-scroll">
+    <h2 class="text-xs font-mono uppercase tracking-[0.2em] opacity-60">Seleção Brasileira</h2>
+    <span class="text-[10px] font-mono opacity-30 uppercase tracking-widest">6 modelos</span>
+  </div>
+  <p class="text-sm text-muted-foreground mb-6 max-w-[40ch] leading-relaxed reveal-on-scroll" style="transition-delay:80ms">Camisas oficiais, retrô e player edition. Tamanhos P ao GG.</p>
+  <div id="selecao-grid" class="grid grid-cols-2 gap-3"></div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="mt-24 px-5 reveal-scale">
+  <div class="bg-card/40 border border-border p-8 text-center">
+    <div class="font-script italic text-4xl mb-2">Catrina Style</div>
+    <p class="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-6">017 · Jales — SP</p>
+    <p class="text-sm text-muted-foreground mb-6 leading-relaxed">Referência em moda masculina urbana. Roupas, acessórios e calçados com curadoria. Enviamos para todo o Brasil.</p>
+    <div class="w-full h-px bg-border mb-6"></div>
+    <div class="space-y-2 mb-8">
+      <p class="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Rua 11, 2422 · Jales — SP · 15700-004</p>
+      <p class="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Seg a Sáb · 09h às 18h</p>
+    </div>
+    <a href="https://wa.me/5517996623922" target="_blank" rel="noreferrer" class="inline-block bg-accent text-accent-foreground px-6 py-3 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">Falar no WhatsApp</a>
+  </div>
+</section>
+
+<footer class="mt-16 px-5 text-center">
+  <p class="font-mono text-[10px] uppercase tracking-widest opacity-30">© <span id="year"></span> Catrina Style · @catrina.stylejales</p>
+</footer>
+
+<a href="https://wa.me/5517996623922" target="_blank" rel="noreferrer" aria-label="Comprar via WhatsApp" class="fixed bottom-6 right-6 z-50 group">
+  <div class="absolute inset-0 bg-accent blur-xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+  <div class="relative bg-accent text-accent-foreground flex items-center gap-3 px-6 py-4 rounded-full shadow-2xl transition-transform active:scale-95">
+    <span class="text-xs font-bold uppercase tracking-widest">Comprar agora</span>
+    <div class="size-2 bg-accent-foreground rounded-full animate-pulse"></div>
+  </div>
+</a>
+
+<!-- Stories modal -->
+<div id="story-modal" class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex-col hidden">
+  <div id="story-bars" class="flex gap-1 px-3 pt-3"></div>
+  <div class="flex items-center justify-between px-4 py-3 text-white">
+    <span id="story-label" class="font-mono text-[10px] uppercase tracking-[0.3em] opacity-80"></span>
+    <button id="story-close" aria-label="Fechar" class="size-8 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition"><span class="text-lg leading-none">×</span></button>
+  </div>
+  <div class="flex-1 flex items-center justify-center px-4 pb-8"><img id="story-img" class="max-h-full max-w-full object-contain rounded-lg" /></div>
+  <div class="px-5 pb-6 flex items-center justify-between text-white">
+    <button id="story-prev" class="font-mono text-[10px] uppercase tracking-widest opacity-70 hover:opacity-100">← Anterior</button>
+    <a href="https://wa.me/5517996623922" target="_blank" rel="noreferrer" class="bg-accent text-accent-foreground px-5 py-2.5 text-[10px] font-bold uppercase tracking-widest hover:opacity-90 transition">Quero esse</a>
+    <button id="story-next" class="font-mono text-[10px] uppercase tracking-widest opacity-70 hover:opacity-100">Próximo →</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const stories = [
+    { label: 'Clientes', img: 'cliente-menino-ney.jpg', ring: 'ring-white' },
+    { label: 'Time', img: 'novidade-camisetas-time.jpg', ring: 'ring-white' },
+    { label: 'Bermudas', img: 'novidade-bermudas-ktron.jpg', ring: 'ring-white' },
+    { label: 'Seleção', img: 'cbf-amarela-texturizada.jpg', ring: 'ring-white' },
+  ];
+  const selecao = [
+    { img: 'cbf-amarela-nike.jpg', label: 'Brasil Home' },
+    { img: 'cbf-azul-nike.jpg', label: 'Brasil Away' },
+    { img: 'cbf-amarela-texturizada.jpg', label: 'Player Edition' },
+    { img: 'cbf-jordan.jpg', label: 'Jordan x CBF' },
+    { img: 'cbf-amarela-retro.jpg', label: 'Retrô 98' },
+    { img: 'cbf-azul-retro.jpg', label: 'Retrô Away' },
+  ];
+
+  const storiesEl = document.getElementById('stories');
+  stories.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'flex-none flex flex-col items-center gap-2 group focus:outline-none';
+    btn.setAttribute('aria-label', 'Abrir destaque ' + s.label);
+    btn.innerHTML = `
+      <div class="size-[72px] rounded-full p-[2px] ring-2 ${s.ring} transition-transform duration-300 group-hover:scale-110 group-active:scale-95">
+        <img src="${s.img}" alt="${s.label}" loading="lazy" class="size-full rounded-full object-cover" />
+      </div>
+      <span class="text-[10px] font-mono tracking-tighter uppercase opacity-80 group-hover:opacity-100">${s.label}</span>`;
+    btn.onclick = () => openStory(i);
+    storiesEl.appendChild(btn);
+  });
+
+  const selGrid = document.getElementById('selecao-grid');
+  selecao.forEach((p, i) => {
+    const a = document.createElement('a');
+    a.href = 'https://wa.me/5517996623922';
+    a.target = '_blank'; a.rel = 'noreferrer';
+    a.className = 'group block reveal-scale';
+    a.style.transitionDelay = (i * 90) + 'ms';
+    a.innerHTML = `
+      <div class="aspect-square bg-card overflow-hidden mb-2">
+        <img src="${p.img}" alt="${p.label}" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+      </div>
+      <div class="flex justify-between items-center">
+        <h3 class="text-[11px] font-mono uppercase tracking-wider">${p.label}</h3>
+        <span class="text-[10px] font-mono opacity-40">→</span>
+      </div>`;
+    selGrid.appendChild(a);
+  });
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal-on-scroll, .reveal-scale').forEach(el => io.observe(el));
+
+  // Stories modal
+  let active = null;
+  const modal = document.getElementById('story-modal');
+  const imgEl = document.getElementById('story-img');
+  const labelEl = document.getElementById('story-label');
+  const barsEl = document.getElementById('story-bars');
+
+  function renderBars() {
+    barsEl.innerHTML = stories.map((_, i) => `
+      <div class="flex-1 h-[2px] bg-white/20 overflow-hidden rounded-full">
+        <div class="h-full bg-white" style="width:${i <= active ? '100%' : '0'}"></div>
+      </div>`).join('');
+  }
+  function openStory(i) {
+    active = i;
+    imgEl.src = stories[i].img;
+    labelEl.textContent = stories[i].label;
+    renderBars();
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeStory() {
+    active = null;
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('story-close').onclick = closeStory;
+  modal.onclick = (e) => { if (e.target === modal) closeStory(); };
+  document.getElementById('story-prev').onclick = (e) => { e.stopPropagation(); openStory((active - 1 + stories.length) % stories.length); };
+  document.getElementById('story-next').onclick = (e) => { e.stopPropagation(); openStory((active + 1) % stories.length); };
+  document.addEventListener('keydown', (e) => {
+    if (active === null) return;
+    if (e.key === 'Escape') closeStory();
+    if (e.key === 'ArrowRight') openStory((active + 1) % stories.length);
+    if (e.key === 'ArrowLeft') openStory((active - 1 + stories.length) % stories.length);
+  });
+</script>
+</body>
+</html>
